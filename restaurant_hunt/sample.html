@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head><title>Face To Face Noodle House</title>
+</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<style>
+#search {
+
+}
+
+#search input[type="text"] {
+    background: url(search-white.png) no-repeat 10px 6px #444;
+    border: 0 none;
+    font: bold 14px Arial,Helvetica,Sans-serif;
+    color: #808080;
+    width: 160px;
+    padding: 6px 15px 6px 35px;
+	
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+	
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    }
+
+#search input[type="text"]:focus {
+    width: 220px;
+    }
+
+</style>
+
+
+<body style="background-color:#333333">
+<body class="w3-container ">
+
+	<nav class="w3-sidenav w3-black w3-card-2" style="display:none">
+	<a href="javascript:void(0)" 
+	onclick="w3_close()"
+	class="w3-closenav w3-large">Close &times;</a>
+	
+		<form method="get" action="https://www.google.com/" id="search">
+		<input name="q" type="text" size="40" placeholder="Search..." />
+		</form>
+		<div class="tfclear"></div>
+		<a class="w3-hover-purple" href="#home">Home</a>
+		<a class="w3-hover-indigo" href="#contact">Contact</a>
+		<a class="w3-hover-light-blue" href="#about">About</a>
+		<div class="w3-dropdown-hover">
+		<a class="w3-hover-orange" href="#category">Category
+		<i class="fa fa-caret-down"> 
+		</i>
+		</a>	
+			<div class="w3-dropdown-content w3-black w3-card-2">
+				<a class="w3-hover-yellow" href="#asian">Asian</a>
+				<a class="w3-hover-brown" href="#japanese">Japanese</a>
+				<a class="w3-hover-teal" href="#themerestaurant">Theme Restaurant</a>
+				<a class="w3-hover-light-green" href="#western">Western</a>
+			</div>
+		</div>
+		
+
+	</nav>
+	
+	<div id="main">
+	<header class="w3-container w3-teal">
+		<span class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</span>
+		<h1>Restaurant Hunt</h1>
+	</header>
+	
+
+	<ul class="w3-navbar w3-black w3-center">
+		<li style="width:33.33%"><a href="#" onclick="openPlace('Description')">Description</a></li>
+		<li style="width:33.33%"><a href="#" onclick="openPlace('Menu')">Menu</a></li>
+		<li style="width:33.33%"><a href="#" onclick="openPlace('Contact')">Contact</a></li>
+
+	</ul>
+
+	<div id="Description" class="w3-container w3-border place" style="background-color:white">
+		<center><h2>Description</h2>
+		<div class="w3-container">	
+	
+	<div class="w3-container w3-pale-yellow w3-leftbar w3-border-yellow">
+	<h2>Face To Face Noodle House</h2>
+	
+
+	<div class="w3-content" style="max-width:800px;position:relative">
+
+		<img class="mySlides" src="face.jpg" style="width:70%">
+		<img class="mySlides" src="face3.jpg" style="width:70%">
+		<img class="mySlides" src="face2.jpg" style="width:70%">
+		<img class="mySlides" src="face4.jpg" style="width:70%">
+
+		<a class="w3-btn-floating" style="position:absolute;top:45%;left:16%" onclick="plusDivs(-1)">&#10094;</a>
+		<a class="w3-btn-floating" style="position:absolute;top:45%;right:16%" onclick="plusDivs(1)">&#10095;</a>
+
+	</center>
+	
+		<p style="font-size:110%">The Home of Original Sarawak Noodles.</p>
+		<p style="font-size:110%">Face to Face with Original Sarawak Noodles, made using ancient techniques passed 
+		down from generation to generation. From the ever-popular Kolok Mee and exquisitely 
+		savoury Sarawak Laksa, to creative variations of delicious pan mee, it all has to be 
+		tasted to be believed. Slurp it all up at Face to Face Noodle House, the home of 
+		Original Sarawak Noodles.</p>
+	
+	</div>
+	</div>
+
+
+	<div id="Menu" class="w3-container w3-border place" style="background-color:white">
+		<center><h2>Menu</h2></center>
+		<div class="w3-container w3-half">
+			<div class="w3-display-container mySlides1">
+			<img src="panmee1.jpg" style="width:100%">
+			<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+			House Specialty Hot & Spicy Pan Mee (Dry) - RM 8.00
+		</div>
+		</div>
+
+			<div class="w3-display-container mySlides1">
+			<img src="panmee2.jpg" style="width:100%">
+			<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+			Sizzling Black Pepper Pork Chop Pan Mee - RM 10.00
+		</div>
+		</div>
+
+			<div class="w3-display-container mySlides1">
+			<img src="panmee.jpg" style="width:100%">
+			<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+			House Specialty Pan Mee (Soup) - RM 8.00
+		</div>
+		</div>
+	</div>
+	<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:60%;left:4%" 
+	onclick="plusDivs(-1)">&#10094;</a>
+	<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:60%;right:52%" 
+	onclick="plusDivs(1)">&#10095;</a>
+	
+	<div class="w3-container w3-half w3-pale-yellow w3-leftbar w3-border-yellow">
+	<br><br>
+		<h3 >Pan Mee with a Sarawakian Twist</h3>
+		<p>Affordable to make, nutritious and deliciously filling, Pan Mee is a common household Malaysian 
+		Chinese dish. At Face to Face, they use the traditional Sarawakian method inspired by 
+		the age-old Jook-Sing technique, to make their Pan Mee, resulting in noodles that truly 
+		stand out in terms of its excellent texture, elasticity, smoothness, colour and nutrition, 
+		all without using any preservatives or alkali. Want to learn how to tell the difference? 
+		Just bite into their noodles, and experience the smooth, chewy and exquisite mouthfeel 
+		for yourself.</p> 
+		<br><br><br><br>
+	</div><br>
+	
+			<div class="w3-container w3-half">
+			<div class="w3-display-container mySlides2">
+			<img src="sarawak.jpg" style="width:100%">
+			<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+			Traditional Sarawak Noodles (Soup) - RM 8.00
+		</div>
+		</div>
+
+			<div class="w3-display-container mySlides2">
+			<img src="sarawak1.jpg" style="width:100%">
+			<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+			Sizzling Black Pepper Pork Chop Pan Mee - RM 10.00
+		</div>
+		</div>
+
+			<div class="w3-display-container mySlides2">
+			<img src="sarawak2.jpg" style="width:100%">
+			<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+			House Specialty Pan Mee (Soup) - RM 8.00
+		</div>
+		</div>
+	</div>
+	<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:123%;left:4%" 
+	onclick="plusDivs(-1)">&#10094;</a>
+	<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:123%;right:52%" 
+	onclick="plusDivs(1)">&#10095;</a>
+	<br>
+	<div class="w3-container w3-half w3-pale-orange w3-leftbar w3-border-orange">
+	<br><br>
+		<h3 >Signature Sarawakian Creations for an Authentic Treat</h3>
+		<p>For a taste of Sarawak, you cannot go wrong with famous Sarawak Noodles, 
+		also called "kolok mee". A staple food in the state, you will find it at every 
+		corner of every street there. Now, they are bringing the original taste of 
+		Sarawak Noodles to your part of town! Savour these wholesome, chewy noodles 
+		served with minced pork and Char Siew, so simple, yet so irresistible!</p> 
+		<br><br>
+	</div>
+	</div>
+	
+	<div id="Contact" class="w3-container w3-border place" style="background-color:white">
+		<center>
+		<h2>Contact</h2>
+		<div class="w3-container w3-pale-yellow w3-leftbar w3-border-yellow">
+			<address>
+			<br>
+			Address :<br>
+			20, Jalan PJS 11/28A,<br>
+			Bandar Sunway,<br>
+			46150 Petaling Jaya.<br><br>
+			Contact Number :<br>
+			Tel: 017-318 9393<br><br>
+			Business Hours :<br>
+			Mon - Sun 10:00am - 9:30pm<br><br>
+			</address>
+			<br>
+			Website :<br>
+			<a href="http://www.facetoface.com.my/index.php/en/"><strong>
+	Face To Face Noodle House</strong></a><br><br><br>
+	</center>
+		</div>
+	</div>
+
+
+	<footer class="w3-container w3-teal">
+		<center><p>	Please give us your feedback</p></center>
+	</footer>
+	
+<script>
+	function w3_open() {
+		document.getElementById("main").style.marginLeft = "18%";// Change the distance betweenthe page and side nav
+		document.getElementsByClassName("w3-sidenav")[0].style.width = "18%";// Change the width of sidenav
+		document.getElementsByClassName("w3-sidenav")[0].style.display = "block";// Show the side nav
+		document.getElementsByClassName("w3-opennav")[0].style.display = 'none';// Make the icon disappear
+		}
+	function w3_close() {
+		document.getElementById("main").style.marginLeft = "0%";// Change the distance betweenthe page and side nav when close it
+		document.getElementsByClassName("w3-sidenav")[0].style.display = "none";// Make the sidenav disappear when close it
+		document.getElementsByClassName("w3-opennav")[0].style.display = "inline-block";// Make the icon appear again when close the sidenav
+		// Sidenav
+	}
+	
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+	</script>	
+<script>
+		
+		
+openPlace("Description")
+function openPlace(placeName) {
+    var i;
+    var x = document.getElementsByClassName("place");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(placeName).style.display = "block";  
+	}// Tabs of the Description, Menu and Contact
+	
+	var slideIndex = 1;
+showDivs(slideIndex);
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides1");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+// Slideshow of the pan mee menu
+</script>
+<script>
+	var slideIndex = 1;
+showDivs(slideIndex);
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides2");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+// Slideshow of the sarawak noodle menu
+
+
+</script>
+
+
+
+</body>
+</html>

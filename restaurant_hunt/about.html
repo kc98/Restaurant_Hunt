@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head><title>Restaurant Hunt - About</title>
+<link rel="shortcut icon" type="image/x-icon" href="icon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="rs_css.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<style>
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+	.text{
+	position:absolute;
+	top: 6%;
+	left:5%;
+	width:460px
+	}
+	
+	
+</style>
+
+
+<body style="background-color:#333333">
+<body class="rs-container ">
+
+	<nav class="rs-sidenav rs-black rs-card-2" style="display:none">
+	<a href="javascript:void(0)" 
+	onclick="w3_close()"
+	class="rs-closenav rs-large">Close &times;</a>
+	
+		<div class="tfclear"></div>
+		<a class="rs-hover-purple" href="home.html">Home</a>
+		<a class="rs-hover-indigo" href="contact.html">Contact</a>
+		<a class="rs-hover-light-blue" href="about.html">About</a>
+		<div class="rs-dropdown-hover">
+		<a class="rs-hover-khaki" href="category.html">Category
+		<i class="fa fa-caret-down"> 
+		</i>
+		</a>	
+			<div class="rs-dropdown-content rs-black rs-card-2">
+				<a class="rs-hover-yellow" href="asian/asian.html">Asian</a>
+				<a class="rs-hover-blue" href="japanese/japanese.html">Japanese</a>
+				<a class="rs-hover-red" href="theme/theme.html">Theme Restaurant</a>
+				<a class="rs-hover-light-green" href="western/western.html">Western</a>
+			</div>
+		</div>
+		
+
+	</nav>
+	
+	<div id="main">
+	<header class="rs-container rs-teal">
+		<span class="rs-opennav rs-xlarge" onclick="w3_open()">&#9776;</span>
+		<a href="home.html"><h1>Restaurant Hunt</h1></a>
+	</header>
+
+		<div class="rs-display-container rs-text-white position: relative">
+		<img src="food6.jpg" alt="asianfood" style="width:100%">
+		<div class="text rs-container ">
+		<h2><strong>About Us</strong></h2>
+		<p style="font-size:120%">
+		If you are looking to have an amazing experience and good meals from a restaurant,
+		you should use <strong>'Restaurant Hunt'</strong>.
+		<br><br>
+		<strong>Restaurant Hunt</strong> is a restaurant guide website which 
+		currently operates in Selangor. 
+		<br><br>
+		We gather information from each restaurant to ensure our data is fresh.
+		<br><br>
+		</p>
+		</div>
+
+	</div>
+	</div>
+
+	<footer class="rs-container rs-teal">
+		<center><p>Copyright &copy; 2016 Restaurant Hunt</p></center>
+	</footer>
+	
+<script>
+	function w3_open() {
+		document.getElementById("main").style.marginLeft = "18%";// Change the distance betweenthe page and side nav
+		document.getElementsByClassName("rs-sidenav")[0].style.width = "18%";// Change the width of sidenav
+		document.getElementsByClassName("rs-sidenav")[0].style.display = "block";// Show the side nav
+		document.getElementsByClassName("rs-opennav")[0].style.display = 'none';// Make the icon disappear
+		}
+	function w3_close() {
+		document.getElementById("main").style.marginLeft = "0%";// Change the distance betweenthe page and side nav when close it
+		document.getElementsByClassName("rs-sidenav")[0].style.display = "none";// Make the sidenav disappear when close it
+		document.getElementsByClassName("rs-opennav")[0].style.display = "inline-block";// Make the icon appear again when close the sidenav
+		// Sidenav
+	}
+	
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head><title>PUTIEN Restaurant - Restaurant Hunt</title>
+<link rel="shortcut icon" type="image/x-icon" href="../../icon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../rs_css.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<style>
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+</style>
+
+
+<body style="background-color:#333333">
+<body class="rs-container ">
+
+	<nav class="rs-sidenav rs-black rs-card-2" style="display:none">
+	<a href="javascript:void(0)" 
+	onclick="w3_close()"
+	class="rs-closenav rs-large">Close &times;</a>
+	
+		<a class="rs-hover-purple" href="../../home.html">Home</a>
+		<a class="rs-hover-indigo" href="../../contact.html">Contact</a>
+		<a class="rs-hover-light-blue" href="../../about.html">About</a>
+		<div class="rs-dropdown-hover">
+		<a class="rs-hover-khaki" href="../../category.html">Category
+		<i class="fa fa-caret-down"> 
+		</i>
+		</a>	
+			<div class="rs-dropdown-content rs-black rs-card-2">
+				<a class="rs-hover-yellow" href="../../asian/asian.html">Asian</a>
+				<a class="rs-hover-blue" href="../../japanese/japanese.html">Japanese</a>
+				<a class="rs-hover-red" href="../../theme/theme.html">Theme Restaurant</a>
+				<a class="rs-hover-light-green" href="../../western/western.html">Western</a>
+			</div>
+		</div>
+		
+
+	</nav>
+	
+	<div id="main">
+	<header class="rs-container rs-teal">
+		<span class="rs-opennav rs-xlarge" onclick="w3_open()">&#9776;</span>
+		<a href="../../home.html"><h1>Restaurant Hunt</h1></a>
+	</header>
+	
+
+	<ul class="rs-navbar rs-black rs-center rs-card-2">
+		<li style="width:33.33%"><a class="rs-red" href="pdescription.html">Description</a></li>
+		<li style="width:33.33%"><a href="pmenu.html">Menu</a></li>
+		<li style="width:33.33%"><a href="pcontact.html">Contact</a></li>
+	</ul>
+
+	<div class="rs-container rs-border place" style="background-color:white">
+		<center><h2>Description</h2>
+		<div class="rs-container">
+	
+	<div class="rs-container rs-pale-yellow rs-leftbar rs-border-yellow">
+	<h2>PUTIEN Restaurant</h2>
+	
+
+	<div class="rs-content" style="max-width:800px;position:relative">
+
+		<img class="mySlides" src="putien1.jpg" style="width:70%">
+		<img class="mySlides" src="putien2.jpg" style="width:70%">
+		<img class="mySlides" src="putien3.jpg" style="width:70%">
+		<img class="mySlides" src="putien4.jpg" style="width:70%">
+
+		<a class="rs-btn-floating" style="position:absolute;top:45%;left:16%" 
+		onclick="plusDivs(-1)">&#10094;</a>
+		<a class="rs-btn-floating" style="position:absolute;top:45%;right:16%" 
+		onclick="plusDivs(1)">&#10095;</a>
+
+	</center>
+		<h3><strong>Brand Story</strong></h3>		
+		<h4>PUTIEN - Tasty, Simple & Heart-Warming Comfort Food</h4>
+		<p style="font-size:110%">
+		The PUTIEN brand name has its roots traced to Putian, a beautiful coastal town 
+		located in the Fujian province of China. Surrounded by spectacular ocean views 
+		and majestic mountains. Putian is blessed with lush pastures and bountiful catches 
+		from the sea. 
+		</p>
+		<p style="font-size:110%">
+		The PUTIEN brand traces its roots to its namesake city of Putian - a beautiful coastal 
+		suburb in Fujian, with rich cultural history and storied tradition since its settlement 
+		over almost one and a half millennium ago. It is, after all, the birthplace of the goddess 
+		Mazu and the fabled Southern Shaolin Kungfu, among many other legendary tales.
+		<br><br>
+		Seated against majestic mountains and facing the vast ocean, Putian is blessed with 
+		bountiful harvests from land and sea. Its humble people offered only their best produce 
+		to honour God, ancestors and country. Every precious yam plucked from the earth; every 
+		prized yield of seaweed; every tug and pull to produce the best vermicelli of the world; these 
+		were heartfelt toils born of modesty and moving sentimentality.
+		<br><br>
+		Modern Putian cuisine therefore carries the essence of its people from ages past - 
+		unpretentious, simple and pure.
+		</p>
+		<br>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+
+	<footer class="rs-container rs-teal">
+		<center><p>Copyright &copy; 2016 Restaurant Hunt</p></center>
+	</footer>
+	
+<script>
+	function w3_open() {
+		document.getElementById("main").style.marginLeft = "18%";// Change the distance betweenthe page and side nav
+		document.getElementsByClassName("rs-sidenav")[0].style.width = "18%";// Change the width of sidenav
+		document.getElementsByClassName("rs-sidenav")[0].style.display = "block";// Show the side nav
+		document.getElementsByClassName("rs-opennav")[0].style.display = 'none';// Make the icon disappear
+		}
+	function w3_close() {
+		document.getElementById("main").style.marginLeft = "0%";// Change the distance betweenthe page and side nav when close it
+		document.getElementsByClassName("rs-sidenav")[0].style.display = "none";// Make the sidenav disappear when close it
+		document.getElementsByClassName("rs-opennav")[0].style.display = "inline-block";// Make the icon appear again when close the sidenav
+		// Sidenav
+	}
+	
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+	
+
+
+</script>
+
+
+</body>
+</html>

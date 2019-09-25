@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head><title>Flavourest Cafe - Restaurant Hunt</title>
+<link rel="shortcut icon" type="image/x-icon" href="../../icon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../rs_css.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<style>
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+</style>
+
+</head>
+
+<body style="background-color:#333333">
+<body class="rs-container ">
+
+	<nav class="rs-sidenav rs-black rs-card-2" style="display:none">
+	<a href="javascript:void(0)" 
+	onclick="w3_close()"
+	class="rs-closenav rs-large">Close &times;</a>
+	
+		<div class="tfclear"></div>
+		<a class="rs-hover-purple" href="../../home.html">Home</a>
+		<a class="rs-hover-indigo" href="../../contact.html">Contact</a>
+		<a class="rs-hover-light-blue" href="../../about.html">About</a>
+		<div class="rs-dropdown-hover">
+		<a class="rs-hover-khaki" href="../../category.html">Category
+		<i class="fa fa-caret-down"> 
+		</i>
+		</a>	
+			<div class="rs-dropdown-content rs-black rs-card-2">
+				<a class="rs-hover-yellow" href="../../asian/asian.html">Asian</a>
+				<a class="rs-hover-blue" href="../../japanese/japanese.html">Japanese</a>
+				<a class="rs-hover-red" href="../theme.html">Theme Restaurant</a>
+				<a class="rs-hover-light-green" href="../../western/western.html">Western</a>
+			</div>
+		</div>
+		
+
+	</nav>
+	
+	<div id="main">
+	<header class="rs-container rs-teal">
+		<span class="rs-opennav rs-xlarge" onclick="w3_open()">&#9776;</span>
+		<a href="../../home.html"><h1>Restaurant Hunt</h1></a>
+	</header>
+	
+	<ul class="rs-navbar rs-black rs-center rs-card-2">
+		<li style="width:33.33%"><a href="flavourest-description.html">Description</a></li>
+		<li style="width:33.33%"><a href="flavourest-menu.html">Menu</a></li>
+		<li style="width:33.33%"><a  class="rs-red" href="flavourest-contact.html">Contact</a></li>
+	</ul>
+	
+	<div class="rs-container rs-border place" style="background-color:white">
+		<center>
+		<h2>Contact</h2>
+		<div class="rs-container rs-pale-red rs-leftbar rs-border-red">
+			<address>
+			<br>
+			Address :<br>
+			No. 46-G, Block D, <br>
+			No.1, Zenith Corporate Park,<br>
+			Jalan SS 7/26,<br>
+			Kelana Jaya.<br>
+			47301 Petaling Jaya,<br>
+			Selangor<br>
+			<br>
+			Contact Number :<br>
+			Tel: 016-500 9409<br>
+			<br>
+			Business Hours :<br>
+			Tues - Fri 10:00am - 9:00pm<br>
+			Sat - Sun 11:00am - 10:00pm <br><br>
+			</address>
+			Website :<br>
+			<a href="https://www.facebook.com/Flavourest/"><strong>
+	Flavourest Cafe</strong></a><br><br>
+			
+	</center>
+	<br><br>
+		</div>
+	</div>
+
+	<footer class="rs-container rs-teal">
+		<center><p>Copyright &copy; 2016 Restaurant Hunt</p></center>
+	</footer>
+	
+<script>
+	function w3_open() {
+		document.getElementById("main").style.marginLeft = "18%";// Change the distance betweenthe page and side nav
+		document.getElementsByClassName("rs-sidenav")[0].style.width = "18%";// Change the width of sidenav
+		document.getElementsByClassName("rs-sidenav")[0].style.display = "block";// Show the side nav
+		document.getElementsByClassName("rs-opennav")[0].style.display = 'none';// Make the icon disappear
+		}
+	function w3_close() {
+		document.getElementById("main").style.marginLeft = "0%";// Change the distance betweenthe page and side nav when close it
+		document.getElementsByClassName("rs-sidenav")[0].style.display = "none";// Make the sidenav disappear when close it
+		document.getElementsByClassName("rs-opennav")[0].style.display = "inline-block";// Make the icon appear again when close the sidenav
+		// Sidenav
+	}
+	
+
+
+</script>
+
+
+
+</body>
+</html>

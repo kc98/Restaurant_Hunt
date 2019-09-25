@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head><title>Restaurant Hunt - Home</title>
+<link rel="shortcut icon" type="image/x-icon" href="icon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="rs_css.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	</head>
+
+<style>
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+	
+.center {
+    position: absolute;
+    left: 0;
+    top: 56%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.button {
+	background-color: Transparent;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 { 
+    color: white; 
+    border: 2px solid #FFFFFF;
+}
+
+.button1:hover {
+    background-color: #ffffff;
+    color: #454545;	
+	
+	
+</style>
+
+
+<body style="background-color:#333333">
+<body class="rs-container ">
+
+	<nav class="rs-sidenav rs-black rs-card-2" style="display:none">
+	<a href="javascript:void(0)" 
+	onclick="w3_close()"
+	class="rs-closenav rs-large">Close &times;</a>
+
+		<div class="tfclear"></div>
+		<a class="rs-hover-purple" href="home.html">Home</a>
+		<a class="rs-hover-indigo" href="contact.html">Contact</a>
+		<a class="rs-hover-light-blue" href="about.html">About</a>
+		<div class="rs-dropdown-hover">
+		<a class="rs-hover-khaki" href="category.html">Category
+		<i class="fa fa-caret-down"> 
+		</i>
+		</a>	
+			<div class="rs-dropdown-content rs-black rs-card-2">
+				<a class="rs-hover-yellow" href="asian/asian.html">Asian</a>
+				<a class="rs-hover-blue" href="japanese/japanese.html">Japanese</a>
+				<a class="rs-hover-red" href="theme/theme.html">Theme Restaurant</a>
+				<a class="rs-hover-light-green" href="western/western.html">Western</a>
+			</div>
+		</div>
+		
+
+	</nav>
+	
+	<div id="main">
+	<header class="rs-container rs-teal">
+		<span class="rs-opennav rs-xlarge" onclick="w3_open()">&#9776;</span>
+		<a href="home.html"><h1>Restaurant Hunt</h1></a>
+	</header>
+		<div class="rs-display-container rs-text-white rs-animate-opacity position: relative">
+		<img src="food11.jpg" alt="asianfood" style="width:100%">
+		<body style="background-color:black">
+		<div class="center">
+		<a href="category.html"><button class="button button1" style="margin-right: 40px"><em>See Restaurants
+		</em></button></a>
+		<a href="about.html"><button class="button button1"><em>More About Us
+		</em></button></a>
+
+	</div>
+	</div>
+	</div>
+	<footer class="rs-container rs-teal">
+		<center><p>Copyright &copy; 2016 Restaurant Hunt</p></center>
+	</footer>
+	
+<script>
+	function w3_open() {
+		document.getElementById("main").style.marginLeft = "18%";// Change the distance betweenthe page and side nav
+		document.getElementsByClassName("rs-sidenav")[0].style.width = "18%";// Change the width of sidenav
+		document.getElementsByClassName("rs-sidenav")[0].style.display = "block";// Show the side nav
+		document.getElementsByClassName("rs-opennav")[0].style.display = 'none';// Make the icon disappear
+		}
+	function w3_close() {
+		document.getElementById("main").style.marginLeft = "0%";// Change the distance betweenthe page and side nav when close it
+		document.getElementsByClassName("rs-sidenav")[0].style.display = "none";// Make the sidenav disappear when close it
+		document.getElementsByClassName("rs-opennav")[0].style.display = "inline-block";// Make the icon appear again when close the sidenav
+		// Sidenav
+	}
+	
+
+
+</script>
+
+
+</body>
+</html>

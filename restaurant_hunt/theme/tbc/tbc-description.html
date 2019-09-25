@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head><title>TBC~Teddy Bear Cafe - Restaurant Hunt</title>
+<link rel="shortcut icon" type="image/x-icon" href="../../icon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../rs_css.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<style>
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+</style>
+
+</head>
+
+<body style="background-color:#333333">
+<body class="rs-container ">
+
+	<nav class="rs-sidenav rs-black rs-card-2" style="display:none">
+	<a href="javascript:void(0)" 
+	onclick="w3_close()"
+	class="rs-closenav rs-large">Close &times;</a>
+	
+		<div class="tfclear"></div>
+		<a class="rs-hover-purple" href="../../home.html">Home</a>
+		<a class="rs-hover-indigo" href="../../contact.html">Contact</a>
+		<a class="rs-hover-light-blue" href="../../about.html">About</a>
+		<div class="rs-dropdown-hover">
+		<a class="rs-hover-khaki" href="../../category.html">Category
+		<i class="fa fa-caret-down"> 
+		</i>
+		</a>	
+			<div class="rs-dropdown-content rs-black rs-card-2">
+				<a class="rs-hover-yellow" href="../../asian/asian.html">Asian</a>
+				<a class="rs-hover-blue" href="../../japanese/japanese.html">Japanese</a>
+				<a class="rs-hover-red" href="../theme.html">Theme Restaurant</a>
+				<a class="rs-hover-light-green" href="../../western/western.html">Western</a>
+			</div>
+		</div>
+		
+
+	</nav>
+	
+	<div id="main">
+	<header class="rs-container rs-teal">
+		<span class="rs-opennav rs-xlarge" onclick="w3_open()">&#9776;</span>
+		<a href="../../home.html"><h1>Restaurant Hunt</h1></a>
+	</header>
+	
+
+	<ul class="rs-navbar rs-black rs-center rs-card-2">
+		<li style="width:33.33%"><a class="rs-red" href="tbc-description.html">Description</a></li>
+		<li style="width:33.33%"><a href="tbc-menu.html">Menu</a></li>
+		<li style="width:33.33%"><a href="tbc-contact.html">Contact</a></li>
+	</ul>
+
+	<div class="rs-container rs-border place" style="background-color:white">
+		<center><h2>Description</h2>
+		<div class="rs-container">	
+	
+	<div class="rs-container rs-pale-red rs-leftbar rs-border-red">
+	<h2>TBC~Teddy Bear Cafe</h2>
+	
+
+	<div class="rs-content" style="max-width:800px;position:relative">
+
+		<img class="mySlides" src="tbc1.jpg" style="width:50%">
+		<img class="mySlides" src="tbc2.jpg" style="width:70%">
+		<img class="mySlides" src="tbc3.jpg" style="width:70%">
+		<img class="mySlides" src="tbc4.jpg" style="width:70%">
+
+		<a class="rs-btn-floating" style="position:absolute;top:45%;left:16%" 
+		onclick="plusDivs(-1)">&#10094;</a>
+		<a class="rs-btn-floating" style="position:absolute;top:45%;right:16%" 
+		onclick="plusDivs(1)">&#10095;</a>
+
+	</center>
+	
+		
+		<p style="font-size:110%">Eat. Relax. Fun.</p>
+		<p style="font-size:110%">The location is quite ideal and the atmosphere 
+		is nice to hang out with espeacially with girls as it themed around on teddy bears. 
+		The kids loved the ambiance especially the floor dining area as well as the teddys in the cafe.
+		You can also take selfie or hug teddy bear there as long as you dine in there.</p>
+	
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+
+	<footer class="rs-container rs-teal">
+		<center><p>Copyright &copy; 2016 Restaurant Hunt</p></center>
+	</footer>
+	
+<script>
+	function w3_open() {
+		document.getElementById("main").style.marginLeft = "18%";// Change the distance betweenthe page and side nav
+		document.getElementsByClassName("rs-sidenav")[0].style.width = "18%";// Change the width of sidenav
+		document.getElementsByClassName("rs-sidenav")[0].style.display = "block";// Show the side nav
+		document.getElementsByClassName("rs-opennav")[0].style.display = 'none';// Make the icon disappear
+		}
+	function w3_close() {
+		document.getElementById("main").style.marginLeft = "0%";// Change the distance betweenthe page and side nav when close it
+		document.getElementsByClassName("rs-sidenav")[0].style.display = "none";// Make the sidenav disappear when close it
+		document.getElementsByClassName("rs-opennav")[0].style.display = "inline-block";// Make the icon appear again when close the sidenav
+		// Sidenav
+	}
+	
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+	
+
+
+</script>
+
+
+</body>
+</html>
